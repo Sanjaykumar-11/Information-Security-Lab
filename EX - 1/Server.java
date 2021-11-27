@@ -89,10 +89,10 @@ class Server
 		char freq_occured = freq(text);
 		Scanner sc=new Scanner(System.in);
 		char[] fr={'e','t','a','o','i'};
+		System.out.println("Frequently occurred cipher letter: "+freq_occured);
 		for(int i=0;i<fr.length;i++)
 		{
 			int temp = ALPHABET.indexOf(freq_occured);
-			System.out.println(freq_occured);
 			int key = (temp-ALPHABET.indexOf(fr[i]))%26;
 			if (key<0)
 			{
