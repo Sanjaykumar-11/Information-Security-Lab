@@ -138,21 +138,25 @@ class Server
 				case 1:
 				System.out.println("Plain text: "+text);
 				System.out.println("Cipher text: "+encrypt(text,key));
+				System.out.println("\n");
 				break;
 
 				case 2:
 				System.out.println("Cipher text: "+text);
 				System.out.println("Plain text: "+decrypt(text,key));
+				System.out.println("\n");
 				break;
 
 				case 3:
 				System.out.println("Cipher text: "+text);
 				brute(text);
+				System.out.println("\n");
 				break;
 
 				case 4:
 				System.out.println("Cipher text: "+text);
 				frequen(text);
+				System.out.println("\n");
 				break;
 
 				case 5:
