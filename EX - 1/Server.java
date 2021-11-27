@@ -88,7 +88,6 @@ class Server
 	public static void frequen(String text)
 	{
 		char freq_occured = freq(text);
-		int iter = 0;
 		Scanner sc=new Scanner(System.in);
 		char[] fr={'e','t','a','o','i'};
 		for(int i=0;i<fr.length;i++)
@@ -103,8 +102,8 @@ class Server
 			String result = decrypt(text,key);
 			System.out.println("Plain Text: " + result + " Key : "+ key);
 			System.out.println("Is this wanted Plain text? (Y/N)");
-			String n = sc.next();
-			if(n.toLowerCase().charAt(0)=='y')
+			String n = sc.nextLine();
+			if(n.toLowerCase().charAt(0)=='n')
 			{
 				continue;
 			}
