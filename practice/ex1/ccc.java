@@ -52,6 +52,17 @@ class ccc
                     pt=dis.readUTF();
                     System.out.println(pt);
                     break;
+                case 3:
+                System.out.println("Enter cipher text: ");
+                 ct=sc.nextLine();
+                 ct=sc.nextLine();
+                 dos.writeUTF(ct);
+                 System.out.println(dis.readUTF());
+                 break;
+                 
+                 
+
+
             
             
                 default:

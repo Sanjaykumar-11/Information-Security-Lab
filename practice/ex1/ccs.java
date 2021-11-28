@@ -65,6 +65,17 @@ class ccs
                     pt=decrypt(ct,key);
                     dos.writeUTF(pt);
                     break;
+                case 3:
+                ct=dis.readUTF();
+                String b="";
+                for (int i=1;i<26;i++){
+                    pt=decrypt(ct,i);
+                    b+=i+" text: "+pt+"\n";
+                    
+                }
+                    dos.writeUTF(b);
+                break;
+
             }
         }
     }
