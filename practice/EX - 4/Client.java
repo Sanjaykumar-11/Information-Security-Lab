@@ -17,21 +17,6 @@ public static BigInteger discreteKey(BigInteger y,BigInteger a,BigInteger p){
  }
  return i;
 }
-
- 
-
-public static BigInteger gcd(BigInteger a,BigInteger b)
-{ BigInteger zero=BigInteger.valueOf(0);
- if(a.equals(zero))
- {
- return b; 
- }
- else
- {
- return gcd(b.mod(a),a);
- } 
-}
-
  
 public static void main(String args[]) throws Exception {
  Scanner sc=new Scanner(System.in);
